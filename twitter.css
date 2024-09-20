@@ -1,0 +1,796 @@
+\* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f8fb;
+    display: flex;
+}
+
+header aside {
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    padding: 15px 0px 30px 30px;
+}
+
+header section {
+    width: 85%;
+    height: 100%;
+    /* border: 2px solid greenyellow; */
+}
+
+header aside .logo {
+    font-size: 30px;
+    color: black;
+}
+
+header aside ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+header aside ul li {
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+header aside ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header aside ul li a:hover {
+    color: #1ca1f1;
+}
+
+header aside ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header aside ul li:nth-child(7) {
+    border-right: 5px solid #1ca1f1;
+}
+
+header aside ul li:nth-child(7) a {
+    color: #1ca1f1;
+}
+
+header aside button {
+    margin-top: 40px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1ca1f1;
+    color: #f4f8fb;
+    cursor: pointer;
+    transition: 3s linear;
+}
+
+header aside button:hover {
+    background-color: rgba(28, 161, 241, .5);
+}
+
+header section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 8%;
+
+}
+
+header section nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header section nav ul li {
+    padding: 3px 15px 3px;
+}
+
+header section nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    transition: .3s linear;
+
+}
+
+header section nav ul li a:hover {
+    color: gray;
+}
+
+header section nav .search {
+    width: 50%;
+    background-color: #f4f8fb;
+    align-items: center;
+    display: flex;
+    padding: 8px 15px;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+header section nav .search input {
+
+    width: 90%;
+    padding: 3px 15px;
+    border: none;
+    font-size: 12px;
+    outline: none;
+    background-color: none;
+}
+
+header section nav .search .bi {
+    font-size: 14px;
+}
+
+header section nav .user {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+header section nav .user img {
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header section::before {
+    content: "";
+    position: absolute;
+    width: 82%;
+    height: 200px;
+    top: 9%;
+    background: url(mount.jpg) no-repeat center center/cover;
+    border-radius: 0px 0px 20px 0px;
+    opacity: .9;
+
+}
+
+header section .profile-post-follow-box {
+    position: relative;
+    top: 18%;
+    height: 74%;
+    width: 100%;
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header section .profile-post-follow-box .profile-box {
+    width: 250px;
+    height: auto;
+    /* border: 1px solid #000; */
+
+}
+
+header section .profile-post-follow-box .profile-box .header section .profile-post-follow-box .profile-box {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, .2);
+    padding: 15px 10px 0px 10px;
+    border-radius: 8px;
+}
+
+.profile-card {
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 239px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.blue-tick-pc {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+}
+
+.profile-image {
+    top: 4px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.profile-card h5 {
+    margin-top: 20px;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+
+.profile-card h6 {
+    margin-top: -20px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 2px 0px;
+}
+
+.profile-card address {
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+
+}
+
+.profile-card address a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+}
+
+.profile-card address a:nth-child(2) {
+    margin-left: 10px;
+
+}
+
+.profile-card p {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 5px;
+
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.data_card {
+    width: 27.5%;
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+
+}
+
+.data_card:nth-child(2) {
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    border-right: 2px solid rgba(0, 0, 0, .1);
+}
+
+.data h4 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0px;
+
+}
+
+h4 {
+    font-size: 12px;
+    padding: 3px 0px 7px 0px;
+    color: #000;
+}
+
+.profile-box .activity_box {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    flex-wrap: wrap-reverse;
+
+
+}
+
+.profile-box .activity_box .activity_card_box {
+    width: 115px;
+    height: 90px;
+    border: 2px solid rgb(213, 218, 222, 0.5);
+    margin-top: 10px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3 linear;
+    cursor: pointer;
+
+}
+
+
+.profile-box .activity_box .activity_card_box:nth-child(3) {
+    background-color: #fff;
+    box-shadow: 0px 0x 20px rgba(231, 19, 19, 0.1);
+    border: 2px solid #f4f8fb;
+
+}
+
+.profile-box .activity_box .activity_card_box i,
+h6 {
+    font-size: 17px;
+    margin-top: 10px;
+    color: #d5dade;
+    transition: .3s linear;
+
+}
+
+.profile-box .activity_box .activity_card_box h6 {
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 13px;
+}
+
+
+.profile-box .activity_box .activity_card_box:hover {
+    background: #fff;
+    border: 2px solid #fff;
+
+}
+
+.profile-box .activity_box .activity_card_box:hover h6 {
+    color: #1ca1f1;
+
+}
+
+.profile-box .activity_box .activity_card_box:hover i {
+    color: #1ca1f1;
+
+}
+
+
+.post_following_box {
+    width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    display: flex;
+
+}
+
+.post_following_box .post {
+    width: 500px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+}
+
+
+.post_following_box .follow {
+    width: 250px;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid #000;
+    margin-right: 50px;
+
+
+}
+
+.post_following_box .post nav {
+
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    height: 12%;
+}
+
+
+
+.post_following_box .post nav li {
+
+    border-bottom: 4px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0px;
+    margin-right: 10px;
+    transition: .3s linear;
+
+
+}
+
+.post_following_box .post nav li:hover {
+    border-bottom: 3px solid #1ca1f1;
+}
+
+.post_following_box .post nav li a {
+
+    padding: 12px 10px;
+}
+
+.post_following_box .post nav li a:hover {
+
+    color: #1ca1f1;
+}
+
+.post_following_box .post nav i {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: .3 linear;
+
+}
+
+.post_following_box .post nav i:hover {
+
+    color: rgba(0, 0, 0, );
+}
+
+.post_following_box .post .post_main_bx {
+    width: 100%;
+    height: 90%;
+}
+
+.post_following_box .post .post_card_bx {
+    width: 94%;
+    height: auto;
+    background-color: #fff;
+    padding: 12px 15px 0px 15px;
+    display: flex;
+    margin: 6px;
+}
+
+.post_following_box .post .post_main_bx .post_following_box .post .post_card_bx.post_profile{
+    width: 10%;
+
+}
+
+.profile_image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.continer
+{
+width: 90%;
+border: 1px solid rgb(0, 0, 0, 0.1);
+border-radius: 5px;
+margin-left: 11px;
+
+}
+
+.continer .retweet
+{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.continer .retweet i
+{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.continer .user_name_time
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Icon
+{
+    width: 35px;
+    height: 35px;
+    margin-left: -6px;
+    
+}
+
+.continer .user_name_time h5
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600px;
+    margin-top: -52px;
+}
+
+h5 p 
+{
+    display: inline;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+
+}
+
+.continer .user_name_time h6
+{
+    color: #000;
+    font-weight: 600px;
+    font-size: 11px;
+    /* margin-top: -10px; */
+    display: block;
+    
+}
+
+.continer .user_name_time h6 i
+{
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.continer .very
+{
+    font-size: 11px;
+    font-weight: 600px;
+    word-break: break-all;
+    margin-top: -35px;
+
+
+}
+
+.retweet_content_bx
+{
+    width: 80%;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 26px;
+    border-radius: 5px;
+}   
+
+.retweet_content_bx .user_name_time h5 img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user_name_time_ronaldo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600px;
+    margin-top: -65px;
+
+}
+
+.user_name_time_ronaldo img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+}
+
+
+.user_name_time_ronaldo i{
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.retweet_content_bx h3
+{
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: -38px;
+}
+
+.user_name_time_ronaldo h6
+{
+    margin-top: 71px;
+    color: #000;
+    font: 600;
+    font-size: 15px;
+    
+}
+
+.tweet_card_social_data
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.tweet_card_social_data .tweet_social_card
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 12px; */
+    padding: 5px;
+    
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(2)
+{
+    border-left: 1px solid rgb(0, 0, .1);
+    border-right: 1px solid rgb(0, 0, .1);   
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(3)
+{
+    border-right: 1px solid rgb(0, 0, .1);   
+}
+
+.tweet_card_social_data .tweet_social_card i
+{
+   color: rgb(0, 0, .2);
+   margin-right: 5px;
+   font-size: 14px;
+}
+
+.tweet_card_social_data .tweet_social_card span
+{
+   font-size: 13px;
+   font-weight: 600;
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(3) i
+{
+    color: rgb(230, 14, 14);
+}
+
+.image_post_bx
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+} 
+
+.image_post_bx img
+{
+    width: 130px;
+    height: 90px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.follow.trend_for_you
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+    display: flex;
+
+}
+
+.trend_for_you nav
+{
+    padding: 12px 17px 12px 9px ;
+    width: auto;
+    height: 35px;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.trend_for_you nav h6 
+{
+    font-size: 20px;
+    padding: 37px 20px 0px 37px;
+    color: #000;
+    font-weight: 600;
+}
+
+.trend_box 
+{
+    width: 94%;
+    height: auto;
+    padding: 15px 15px 0px 1px;
+    background-color: #fff;
+}
+
+.trend_box li
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    list-style: none;
+
+}
+
+.trend_box li a 
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+
+}
+
+.trend_box li a p
+{
+  
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 2px;
+}
+
+.trend_box  li i
+
+{
+    font-size: 20px;
+}
+
+.trend_box .rate button
+{
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 5px;
+    transition:.3 linear;
+    cursor: pointer;
+}
+
+.trend_box .rate button:hover{
+    color: rgb(56, 54, 54);
+}
+
+.trend_box .rate button i
+{
+    margin-right: 5px;
+}
+
+.trend_box .rate .interest
+{
+height: 0px;
+overflow: hidden;
+
+}
+
+.trend_box .see_more
+{
+    width: 100%;
+    outline: none;
+    color: rgba(0, 0, 0, 0.4);
+    border: none;
+    background:none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.trend_box .see_more:hover
+{
+color: #000;
+}
